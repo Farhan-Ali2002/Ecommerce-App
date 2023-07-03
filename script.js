@@ -22,9 +22,13 @@ if (!(categories.includes(category))) {
 var card = document.createElement("div")
 card.className = "card"
 var prodImg = document.createElement("img")
+prodImg.className = "prodImg"
 prodImg.src = `${allProducts[i].image}`
-prodImg.style.width = "100%"
-prodImg.style.height = "65%"
+// prodImg.style.width = "100%"
+// prodImg.style.height = "50%"
+// prodImg.style.objectFit = "contain"
+// prodImg.style.marginBottom = "20px"
+
 var prodContainer = document.createElement("div")
 prodContainer.className = "prod-container"
 var title = document.createElement("h4")
@@ -68,8 +72,9 @@ rating.appendChild(ratingNum)
 titleDiv.appendChild(title)
 prodContainer.appendChild(titleDiv)
 prodContainer.appendChild(desc)
-prodContainer.appendChild(price)
 prodContainer.appendChild(rating)
+prodContainer.appendChild(price)
+
 card.appendChild(prodImg)
 card.appendChild(prodContainer)
 

@@ -9,29 +9,37 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap" rel="stylesheet">
     </head>
     <body>
         
-        <header class="header paddingclass">
-<div class="title">EcommerceApp</div>
-<form id="form" role="search">
+        <header class="header ">
+            <div class="wrapper paddingclass">
+            <div class="section-left">
+                <span class="title">EcommerceApp</span>
+<               <form id="form" role="search">
     
-        <input type="search" id="query" name="q"
-        placeholder="Search..."
-        aria-label="Search through site content">
-        <button class="search_btn"><i class="fa fa-search" style="font-size:20px"></i></button>
+                <input type="search" id="query" name="q"
+                placeholder="Search..."
+                aria-label="Search through site content">
+                <button class="search_btn"><i class="fa fa-search" style="font-size:20px"></i></button>
    
-  </form>
+                </form>
+  </div>
+  <div class="section-right">
 <div class="bell_icon">
   <button >
     <i class="fa fa-bell" style="font-size:36px"></i>
 
   </button>
-</div>
+</div >
 <button class="profile">
     <img src="avatar.jpg" alt="Avatar" class="avatar">
 </button>
-
+</div>
+</div>
         </header>
         <div class="main paddingclass">
              <div class="sidebar">
@@ -55,28 +63,27 @@
                        
                         <br><br<<br><br>
                         <h4 class="sidebar-item">Category</h4>
-                        <input type="checkbox" id="numberA" name="Number A" value="A">
-                        <label class="pricesRange" for="numberA"> Number A</label><br>
-                        <input type="checkbox" id="numberB" name="Number B" value="B">
-                        <label class="pricesRange" for="numberB"> Number B</label><br>
-                        <input type="checkbox" id="numberC" name="Number C" value="C">
-                        <label class="pricesRange" for="numberC"> Number C</label><br>
-                        <input type="checkbox" id="numberC" name="Number C" value="C">
-                        <label class="pricesRange" for="numberC"> Number C</label><br>
-                        <input type="checkbox" id="numberC" name="Number C" value="C">
-                        <label class="pricesRange" for="numberC"> Number C</label><br>
+                        <input type="radio" id="numberA" name="Category" value="men's clothing">
+                        <label class="pricesRange" for="numberA"> men's clothing</label><br>
+                        <input type="radio" id="numberB" name="Category" value="jewelery">
+                        <label class="pricesRange" for="numberB"> jewelery</label><br>
+                        <input type="radio" id="numberC" name="Category" value="electronics">
+                        <label class="pricesRange" for="numberC"> electronics</label><br>
+                        <input type="radio" id="numberC" name="Prices" value="women's clothing">
+                        <label class="pricesRange" for="numberC">women's clothing</label><br>
+                        
 
                         <br><br<<br><br>
                         <h4 class="sidebar-item">Prices</h4>
-                        <input  type="checkbox" id="numberA" name="Number A" value="A">
+                        <input  type="radio" id="numberA" name="Prices" value="A">
                         <label class="pricesRange" for="numberA">$0 - $100</label><br>
-                        <input  type="checkbox" id="numberB" name="Number B" value="B">
+                        <input  type="radio" id="numberB" name="Prices" value="B">
                         <label class="pricesRange" for="numberB">$101 - $300</label><br>
-                        <input  type="checkbox" id="numberC" name="Number C" value="C">
+                        <input  type="radio" id="numberC" name="Prices" value="C">
                         <label class="pricesRange" for="numberC"> $301 - $500</label><br>
-                        <input type="checkbox" id="numberC" name="Number C" value="C">
+                        <input type="radio" id="numberC" name="Prices" value="C">
                         <label class="pricesRange" for="numberC"> $501 - $1000</label><br>
-                        <input type="checkbox" id="numberC" name="Number C" value="C">
+                        <input type="radio" id="numberC" name="Prices" value="C">
                         <label class="pricesRange" for="numberC"> $1001 - above</label>
                       
                 </div>
