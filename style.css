@@ -252,11 +252,15 @@ a{
   .rating{
     /* position: absolute;
     top: 50px; */
+    /* height: 40px;
+    width: 100%; */
   }
   .star{
     font-size: 18px;
     font-weight: bold;
   }
+
+  
   .ratingNum{
     margin-left: 8px;
   }
